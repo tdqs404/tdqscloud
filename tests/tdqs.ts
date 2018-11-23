@@ -2,11 +2,11 @@
  * @Author: gzq
  * @Date: 2018-11-23 10:07:13
  * @Last Modified by: gzq
- * @Last Modified time: 2018-11-23 11:03:32
+ * @Last Modified time: 2018-11-23 14:20:24
  */
-import 'should';
 import { describe, it } from 'mocha';
-import { init, setHeader } from '../src/tdqs';
+import 'should';
+import { init, setHeader } from '../src/index';
 
 describe('测试tdqs.ts', () => {
   describe('测试setHeader函数', () => {

@@ -2,7 +2,7 @@
  * @Author: gzq
  * @Date: 2018-11-22 16:16:23
  * @Last Modified by: gzq
- * @Last Modified time: 2018-11-23 11:02:26
+ * @Last Modified time: 2018-11-23 14:18:16
  * 兼容angular 7.0.4 httpclient
  */
 import _ from 'lodash';
@@ -37,7 +37,7 @@ export interface IRequest {
  * @param options
  */
 export function extendOptions(...options: IOptions[]): IOptions {
-  let res: IOptions = { headers: {}, params: {} };
+  const res: IOptions = { headers: {}, params: {} };
   options.map((o: IOptions) => {
     const merge = (key: string) => {
       const customizer = (objValue, srcValue) => {
@@ -49,7 +49,9 @@ export function extendOptions(...options: IOptions[]): IOptions {
       };
       _.mergeWith(res[key], o[key], customizer);
     };
-    for (let key in res) merge(key);
+    for (const key of Object.keys(res)) {
+      merge(key);
+    }
   });
   return res;
 }

@@ -2,12 +2,12 @@
  * @Author: gzq
  * @Date: 2018-11-22 16:42:16
  * @Last Modified by: gzq
- * @Last Modified time: 2018-11-23 11:03:15
+ * @Last Modified time: 2018-11-23 14:20:13
  */
 
-import 'should';
 import { describe, it } from 'mocha';
-import { extendOptions } from '../src/request';
+import 'should';
+import { extendOptions } from '../src/index';
 
 describe('测试request.ts', () => {
   describe('测试extendOptions函数', () => {
