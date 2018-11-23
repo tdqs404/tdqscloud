@@ -1,0 +1,27 @@
+{
+  "name": "@tdqs/cloud",
+  "version": "1.0.0",
+  "description": "基于mongodb的前端orm框架",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "publish": "npm publish --access public",
+    "test": "mocha -r ts-node/register ./tests/*.ts"
+  },
+  "keywords": [
+    "tdqscloud"
+  ],
+  "author": "gzq",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.118",
+    "@types/mocha": "^5.2.5",
+    "@types/should": "^13.0.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  }
+}
